@@ -130,15 +130,39 @@ body {
 }
 
 .card__product-price {
-    font-size: 4rem;
+    font-size: 3.5rem;
     color: var(--light-cyan);
     font-family: var(--Fraunces);
     margin-bottom: 2rem;
+    display: inline-block;
+}
+
+.card__product-price-line-through {
+    display: inline-block;
+    margin-left: 1.8rem;
+    position: relative;
+    bottom: 1rem;
+    font-family: var(--Montserrat);
+    font-size: 1.3rem;
+    text-decoration: line-through;
+    color: var(--dark-grayish-blue);
 }
 
 @media screen and (min-width: 1110px) {
     .card__body {
         padding: 3rem;
+    }
+
+    .card__product-name {
+        font-size: 3.2rem;
+    }
+
+    .card__product-description {
+        margin-bottom: 3.5rem;
+    }
+
+    .card__product-price {
+        margin-bottom: 3rem;
     }
 }
 
@@ -150,7 +174,7 @@ body {
     border-radius: 10px;
     border: none;
     display: block;
-    padding: 1.8rem;
+    padding: 1.6rem;
     width: 100%;
     cursor: pointer;
     transition: 0.5s ease;
@@ -162,7 +186,9 @@ body {
 }
 
 .card__button-text {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
+    font-weight: var(--bold);
+    letter-spacing: 1px;
     font-family: var(--Montserrat);
     color: var(--white);
 }
